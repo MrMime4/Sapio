@@ -3,9 +3,11 @@ from django.http.response import StreamingHttpResponse
 from .camera import VideoCamera
 # Create your views here.
 
+def home(request):
+	return render(request, 'streamapp/home.html')
 
-def index(request):
-	return render(request, 'home.html')
+def stream(request):
+	return render(request, 'streamapp/stream.html')
 
 
 def gen(camera):
