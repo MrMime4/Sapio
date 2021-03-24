@@ -28,7 +28,7 @@ Now At this point you have created a virtual envirement for your project
       pip install imutils
       pip install mysqlclient
       
-      git clone https
+      git clone https://github.com/MrMime4/Sapio.git
       
       cd Sapio
       cd stream
