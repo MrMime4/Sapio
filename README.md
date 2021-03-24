@@ -3,17 +3,18 @@ Final Year Project
 
 Requirements{
 
-pip install django mysqlclient
-pip install imutils
-pip install python-opencv
-django == 3.0.5
-python < 3.0.x
+      pip install django mysqlclient
+      pip install imutils
+      pip install python-opencv
+      django == 3.0.5
+      python < 3.0.x
 
 }
 
 To Run The project on your local machine first download the relevent python version along with the "pip" utility to be esily able to download other requirement.
 
 Then, install django in an envirement with following commands,
+
       pip install virtualenv
       mkdir myproject
       cd myproject
