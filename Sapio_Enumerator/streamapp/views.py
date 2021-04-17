@@ -4,6 +4,7 @@ from .camera import VideoCamera
 import cv2
 import datetime
 import numpy as np
+from .models import Records
 # Create your views here.
 
 
@@ -72,6 +73,8 @@ def gen(camera):
             #####################################################
                 date = datetime.datetime.now().strftime('%H:%M:%S')
                 print("Out at ", date)
+                record = Records(stamp = date, direction = "OUT")
+                record.save()
             ######################################################
 
         elif new_pts.ravel()[0] < 200 or new_pts.ravel()[2] < 200:
@@ -83,6 +86,8 @@ def gen(camera):
             ########################################################
                 date = datetime.datetime.now().strftime('%H:%M:%S')
                 print("In at ", date)
+                record = Records(stamp = date, direction = "IN")
+                record.save()
             ##########################################################
 
         gray_inp_img = new_gray.copy()

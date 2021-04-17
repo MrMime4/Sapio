@@ -3,5 +3,5 @@ from django.utils import timezone
 
 # Create your models here.
 class Records(models.Model):
-    stamp = models.DateTimeField()
+    stamp = models.TimeField()
     direction = models.CharField(max_length=5)
