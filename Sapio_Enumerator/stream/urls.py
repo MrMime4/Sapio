@@ -18,7 +18,11 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
     path('', include('users.urls')),
     path('streamapp/', include('streamapp.urls')),
+=======
+    path('', include('streamapp.urls')),
+>>>>>>> b5c60cd24ebed6da9eb4490924ee053df955720c
 ]
 

@@ -15,7 +15,10 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR =os.path.join(BASE_DIR, 'templates')
+<<<<<<< HEAD
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
+=======
+>>>>>>> b5c60cd24ebed6da9eb4490924ee053df955720c
 
 
 # Quick-start development settings - unsuitable for production
@@ -40,7 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'streamapp',
+<<<<<<< HEAD
     'users',
+=======
+>>>>>>> b5c60cd24ebed6da9eb4490924ee053df955720c
 ]
 
 MIDDLEWARE = [
@@ -80,9 +86,15 @@ WSGI_APPLICATION = 'stream.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+<<<<<<< HEAD
         'NAME': 'SapioDB',
         'USER': 'root',
         'PASSWORD': 'manthan',
+=======
+        'NAME': 'sapio',
+        'USER': 'dbadmin',
+        'PASSWORD': 'password',
+>>>>>>> b5c60cd24ebed6da9eb4490924ee053df955720c
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -126,5 +138,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+<<<<<<< HEAD
 
 STATIC_DIRS = [STATIC_DIR]
+=======
+>>>>>>> b5c60cd24ebed6da9eb4490924ee053df955720c

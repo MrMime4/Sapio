@@ -5,6 +5,14 @@ import cv2
 import datetime
 import numpy as np
 from .models import Records
+<<<<<<< HEAD
+=======
+# Create your views here.
+
+
+def home(request):
+    return render(request, 'home.html')
+>>>>>>> b5c60cd24ebed6da9eb4490924ee053df955720c
 
 
 def stream(request):
@@ -27,6 +35,11 @@ def gen(camera):
                b'Content-Type: image/img\r\n\r\n' + frame + b'\r\n\r\n')
 
         new_inp_img = lst[1]
+<<<<<<< HEAD
+=======
+        new_inp_img = cv2.flip(new_inp_img, 1)
+        new_inp_img = cv2.blur(new_inp_img, (4, 4))
+>>>>>>> b5c60cd24ebed6da9eb4490924ee053df955720c
         new_gray = lst[1]
         new_pts, status, err = cv2.calcOpticalFlowPyrLK(gray_inp_img,
                                                     new_gray, old_pts, None, maxLevel=1,
