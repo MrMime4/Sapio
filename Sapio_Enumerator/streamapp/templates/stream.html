@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Video Live Stream</title>
+  </head>
+  <style>
+    h1{
+      align-items: center;
+      text-align: center;
+    }
+    .window{
+      position:absolute;
+      padding-top: 2px;
+      padding-left: 45px;
+      padding-bottom: 2px;
+      padding-right: 45px;
+      border-radius: 10px;
+      border-top: 100px solid rgb(51, 34, 34);
+      border-bottom: 100px solid rgb(51, 34, 34);
+    }
+    .frame{
+      position: absolute;
+      padding-left: 466px;
+    }
+
+    img{
+      width: 800px;
+      height: 560px;
+    }
+
+  </style>
+  <body>
+    <h1>Video Live Stream</h1>
+    <div  class="frame">
+      <div class='window'>
+        <img src="{% url 'streamapp:video_feed' %}">
+    </div>
+    </div>
+
+  </body>
+</html>
